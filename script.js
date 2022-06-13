@@ -96,3 +96,16 @@ decimal.addEventListener("click", (event) => {
     inputDecimal(event.target.value)
     updateScreen(currentNumber)
 })
+
+const percentage = document.querySelector(".percentage")
+
+const percent = () => {
+    prevNumber = ''
+    calculationOperator = ''
+    currentNumber = currentNumber * 0.01
+}
+
+percentage.addEventListener("click", () => {
+    percent()
+    updateScreen(currentNumber)
+})
